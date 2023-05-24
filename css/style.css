@@ -1,3 +1,55 @@
-body {
-    background-color: aqua;
-}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 6px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name name"
+      "main- sidebar"
+      "main- sidebar"
+      "main- sidebar"
+      "footer footer";
+  }
+  
+  .name { grid-area: name; }
+  
+  .footer { grid-area: footer; }
+  
+  .main- {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main-1 main-1 main-1"
+      "main-2 main-2 main-2";
+    grid-area: main-;
+  }
+  
+  .main-1 { grid-area: main-1;
+background-color: antiquewhite; }
+  
+  .main-2 { grid-area: main-2;
+background-color: aquamarine; }
+  
+  .sidebar {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sidebar-1 sidebar-1 sidebar-1"
+      "sidebar-2 sidebar-2 sidebar-2"
+      "sidebar-3 sidebar-3 sidebar-3"; 
+    grid-area: sidebar;
+  }
+  
+  .sidebar-1 { grid-area: sidebar-1; 
+background-color: blue;}
+  
+  .sidebar-2 { grid-area: sidebar-2; 
+background-color: blueviolet;}
+  
+  .sidebar-3 { grid-area: sidebar-3; background-color: brown;}
+  
