@@ -1,47 +1,63 @@
-.container { .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Header Header Header"
-      "Main Main Main"
-      "Footer Footer Footer";
-  }
-  
-  .Header {  display: grid;
-    grid-template-columns: 1.6fr 0.4fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". Nav"
-      "Skills Skills";
-    grid-area: Header;
-  }
-  
-  .Nav { grid-area: Nav; }
-  
-  .Skills { grid-area: Skills; }
-  
-  .Main {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 0.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Article-1 Article-2 Article-3"
-      "Contact Contact Contact";
-    grid-area: Main;
-  }
-  
-  .Article-1 { grid-area: Article-1; }
-  
-  .Article-2 { grid-area: Article-2; }
-  
-  .Article-3 { grid-area: Article-3; }
-  
-  .Contact { grid-area: Contact; }
-  
-  .Footer { grid-area: Footer; }
-  
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header"
+    "Main Main Main"
+    "Footer Footer Footer";
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Nav"
+    "Skills Skills";
+  grid-area: Header;
+}
+
+.Nav {
+  grid-area: Nav;
+}
+
+.Skills {
+  grid-area: Skills;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Article-1 Article-2 Article-3"
+    "Contact Contact Contact";
+  grid-area: Main;
+}
+
+.Article-1 {
+  grid-area: Article-1;
+}
+
+.Article-2 {
+  grid-area: Article-2;
+}
+
+.Article-3 {
+  grid-area: Article-3;
+}
+
+.Contact {
+  grid-area: Contact;
+}
+
+.Footer {
+  grid-area: Footer;
+}
