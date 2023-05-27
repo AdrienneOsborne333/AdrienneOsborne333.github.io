@@ -1,55 +1,47 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 6px 0px;
+.container { .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.8fr 0.2fr;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "name name"
-      "main- sidebar"
-      "main- sidebar"
-      "main- sidebar"
-      "footer footer";
+      "Header Header Header"
+      "Main Main Main"
+      "Footer Footer Footer";
   }
   
-  .name { grid-area: name; }
-  
-  .footer { grid-area: footer; }
-  
-  .main- {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .Header {  display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
     grid-template-rows: 1fr 1fr;
-    gap: 7px 0px;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "main-1 main-1 main-1"
-      "main-2 main-2 main-2";
-    grid-area: main-;
+      ". Nav"
+      "Skills Skills";
+    grid-area: Header;
   }
   
-  .main-1 { grid-area: main-1;
-background-color: antiquewhite; }
+  .Nav { grid-area: Nav; }
   
-  .main-2 { grid-area: main-2;
-background-color: aquamarine; }
+  .Skills { grid-area: Skills; }
   
-  .sidebar {  display: grid;
+  .Main {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 7px 0px;
+    grid-template-rows: 1.5fr 0.6fr;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "sidebar-1 sidebar-1 sidebar-1"
-      "sidebar-2 sidebar-2 sidebar-2"
-      "sidebar-3 sidebar-3 sidebar-3"; 
-    grid-area: sidebar;
+      "Article-1 Article-2 Article-3"
+      "Contact Contact Contact";
+    grid-area: Main;
   }
   
-  .sidebar-1 { grid-area: sidebar-1; 
-background-color: blue;}
+  .Article-1 { grid-area: Article-1; }
   
-  .sidebar-2 { grid-area: sidebar-2; 
-background-color: blueviolet;}
+  .Article-2 { grid-area: Article-2; }
   
-  .sidebar-3 { grid-area: sidebar-3; background-color: brown;}
+  .Article-3 { grid-area: Article-3; }
+  
+  .Contact { grid-area: Contact; }
+  
+  .Footer { grid-area: Footer; }
   
