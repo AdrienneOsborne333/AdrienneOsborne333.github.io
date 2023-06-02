@@ -11,7 +11,7 @@
     "Footer Footer Footer";
 }
 
-.Header {
+.header {
   display: grid;
   grid-template-columns: 1.6fr 1.6fr 0.4fr;
   grid-template-rows: 1.5fr 0.6fr;
@@ -23,14 +23,14 @@
   grid-area: Header;
 }
 
-.Nav {
+.nav {
   grid-area: Nav;
 }
 
 .Article {
   grid-area: Article;
 }
-.Main {
+.main {
   display: grid;
   grid-template-columns: 1.6fr 1.6fr 0.4fr;
   grid-template-rows: 3fr 1.6fr;
@@ -41,25 +41,23 @@
   grid-area: Main;
   padding: auto;
 }
-
 <img class="article" src="golf course.jpg"/ > .article1 {
   grid-area: Article-1;
   background-color: aqua;
   display: flexbox;
 }
-.article2 {
+.Article2 {
   grid-area: Article-2;
   background-color: burlywood;
   display: flexbox;
 }
-.article4 {
-  grid-area: Article-4;
+.Article3 {
+  grid-area: Article-3;
   background-color: aquamarine;
   display: flex;
 }
-
-.article3 {
-  grid-area: Article-3;
+.Article4 {
+  grid-area: Article-4;
   background-color: aquamarine;
   display: flex;
 }
