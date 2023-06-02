@@ -37,13 +37,14 @@
   gap: 0px 0px;
   grid-template-areas:
     "Article-1 Article-2 Article-3 Article-4"
-    "Footer Footer";
+    "Footer Footer Footer";
   grid-area: Main;
   padding: auto;
 }
-<img class="article" src="golf course.jpg"/ > .article1 {
-  grid-area: Article-1;
-  background-color: aqua;
+.Article src="golf course.jpg"/>.Article1{
+  grid-area: 46 67 Article-1;
+  background-color aqua;}
+  {
   display: flexbox;
 }
 .Article2 {
