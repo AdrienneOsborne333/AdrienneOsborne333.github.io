@@ -60,4 +60,9 @@
 
 Footer {
   grid-area: Footer;
+  justify-content: center;
+  text-align: center;
+}
+body {
+  background-color: ghostwhite;
 }
